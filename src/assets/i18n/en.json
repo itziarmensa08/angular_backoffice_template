@@ -1,0 +1,9 @@
+{
+    "menu": {
+        "home": "Home",
+        "auth": "Auth",
+        "databases": "Databases",
+        "storage": "Storage",
+        "settings": "Settings"
+    }
+}

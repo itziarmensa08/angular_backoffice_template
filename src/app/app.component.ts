@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
@@ -7,5 +8,20 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'routeinjector_backoffice_angular';
+  title = 'GreenGuard';
+
+  constructor(private translate: TranslateService) {
+    translate.addLangs(['ca', 'es', 'en']);
+    translate.setDefaultLang('es');
+    
+    const browserLang = this.translate.getBrowserLang();
+    let lang = '';
+
+    if (browserLang && browserLang.match(/ca|es|en/)) {
+      lang = browserLang;
+    } else {
+      lang = 'ca';
+    }
+    translate.use(lang);
+  }
 }

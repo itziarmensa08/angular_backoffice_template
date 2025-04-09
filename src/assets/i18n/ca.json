@@ -1,0 +1,10 @@
+{
+    "menu": {
+      "home": "Inici",
+      "auth": "Autenticació",
+      "databases": "Bases de dades",
+      "storage": "Emmagatzematge",
+      "settings": "Configuració"
+    }
+}
+  
