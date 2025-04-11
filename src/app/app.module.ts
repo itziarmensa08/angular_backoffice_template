@@ -15,6 +15,14 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { MatCardModule } from '@angular/material/card';
 
+import { HTTP_INTERCEPTORS } from '@angular/common/http';
+import { JwtInterceptor } from './services/jwt.interceptor';
+import { LoginComponent } from './pages/login/login.component';
+import { AuthComponent } from './pages/auth/auth.component';
+import { ModelsComponent } from './pages/models/models.component';
+import { StorageComponent } from './pages/storage/storage.component';
+import { SettingsComponent } from './pages/settings/settings.component';
+
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
@@ -22,7 +30,12 @@ export function HttpLoaderFactory(http: HttpClient) {
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    LoginComponent,
+    AuthComponent,
+    ModelsComponent,
+    StorageComponent,
+    SettingsComponent
   ],
   imports: [
     BrowserModule,
@@ -44,7 +57,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     }),
     MatCardModule
   ],
-  providers: [],
+  providers: [
+    { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
