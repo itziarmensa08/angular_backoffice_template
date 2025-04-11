@@ -1,0 +1,21 @@
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}  
+
+mat-card {
+    width: 300px;
+    flex: 1 1 300px;
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.05);
+    }
+}
+
+mat-card-title-group {
+    margin-bottom: 20px;
+}

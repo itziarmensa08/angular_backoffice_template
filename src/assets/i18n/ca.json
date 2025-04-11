@@ -1,10 +1,19 @@
 {
-    "menu": {
-      "home": "Inici",
-      "auth": "Autenticació",
-      "databases": "Bases de dades",
-      "storage": "Emmagatzematge",
-      "settings": "Configuració"
-    }
+  "menu": {
+    "home": "Inici",
+    "auth": "Autenticació",
+    "databases": "Bases de dades",
+    "storage": "Emmagatzematge",
+    "settings": "Configuració"
+  },
+  "auth": {
+    "message": "Gestiona usuaris, inici de sessió i validacions de compte amb JWT i correu electrònic segur."
+  },
+  "databases": {
+    "message": "Visualitza i administra les dades emmagatzemades a les teves col·leccions o taules amb facilitat."
+  },
+  "storage": {
+    "message": "Puja, gestiona i accedeix a fitxers de forma segura amb suport d'emmagatzematge al núvol."
+  }
 }
   

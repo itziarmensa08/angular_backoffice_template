@@ -5,5 +5,14 @@
         "databases": "Databases",
         "storage": "Storage",
         "settings": "Settings"
+    },
+    "auth": {
+        "message": "Manage users, logins, and account validations using secure JWT and email."
+    },
+    "databases": {
+        "message": "View and manage stored data in your collections or tables with ease."
+    },
+    "storage": {
+        "message": "Upload, manage, and access files securely with cloud storage support."
     }
 }

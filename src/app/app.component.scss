@@ -33,4 +33,19 @@ mat-toolbar {
 .mat-drawer {
     border-top-right-radius: 0;
 }
+
+.nav-item .nav-content {
+    display: flex;
+    align-items: center;
+  
+    mat-icon {
+      margin-right: 8px;
+      font-size: 20px;
+    }
+  
+    span {
+      line-height: 1;
+    }
+}
+
   

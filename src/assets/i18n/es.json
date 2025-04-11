@@ -1,10 +1,19 @@
 {
-    "menu": {
-      "home": "Inicio",
-      "auth": "Autenticación",
-      "databases": "Bases de datos",
-      "storage": "Almacenamiento",
-      "settings": "Configuración"
-    }
+  "menu": {
+    "home": "Inicio",
+    "auth": "Autenticación",
+    "databases": "Bases de datos",
+    "storage": "Almacenamiento",
+    "settings": "Configuración"
+  },
+  "auth": {
+    "message": "Gestiona usuarios, inicios de sesión y validaciones de cuenta con JWT y email seguro."
+  },
+  "databases": {
+    "message": "Visualiza y administra los datos almacenados en tus colecciones o tablas fácilmente."
+  },
+  "storage": {
+    "message": "Sube, gestiona y accede a archivos de forma segura con soporte de almacenamiento en la nube."
+  }
 }
   

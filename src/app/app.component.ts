@@ -8,7 +8,7 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'GreenGuard';
+  title = 'RouteInjector';
 
   constructor(private translate: TranslateService) {
     translate.addLangs(['ca', 'es', 'en']);
