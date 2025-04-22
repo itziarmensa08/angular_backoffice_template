@@ -25,6 +25,7 @@ import { SettingsComponent } from './pages/settings/settings.component';
 import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { TableComponent } from './components/table/table.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -38,7 +39,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     AuthComponent,
     ModelsComponent,
     StorageComponent,
-    SettingsComponent
+    SettingsComponent,
+    TableComponent
   ],
   imports: [
     BrowserModule,

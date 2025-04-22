@@ -1,6 +1,7 @@
 {
   "global": {
-    "search": "Buscar ..."
+    "search": "Buscar ...",
+    "no_data": "No hay datos aún ..."
   },
   "menu": {
     "home": "Inicio",

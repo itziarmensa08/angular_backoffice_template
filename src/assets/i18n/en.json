@@ -1,6 +1,7 @@
 {
     "global": {
-        "search": "Search ..."
+        "search": "Search ...",
+        "no_data": "There is no data yet ..."
     },
     "menu": {
         "home": "Home",

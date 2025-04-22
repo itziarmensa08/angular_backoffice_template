@@ -13,6 +13,13 @@
                 <input matInput type="text" [(ngModel)]="searchQuery" placeholder="{{ 'auth.searchPlaceholder' | translate }}">
                 <mat-icon matSuffix>search</mat-icon>
             </mat-form-field>
+            <app-table
+              [headers]="['Nombre', 'Edad', 'Ciudad']"
+              [data]="[
+                { 'Nombre': 'Itziar', 'Edad': 25, 'Ciudad': 'Barcelona' },
+                { 'Nombre': 'Marc', 'Edad': 30, 'Ciudad': 'Madrid' }
+              ]">
+            </app-table>
         </mat-card-content>
     </mat-card>
 </div>

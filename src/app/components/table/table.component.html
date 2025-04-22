@@ -1,0 +1,17 @@
+<table class="table" *ngIf="data && data.length > 0; else noData">
+    <thead>
+      <tr>
+        <th *ngFor="let header of headers">{{ header }}</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let row of data">
+        <td *ngFor="let header of headers">{{ row[header] }}</td>
+      </tr>
+    </tbody>
+</table>
+  
+<ng-template #noData>
+    <div class="no-data">{{ 'global.no_data' | translate }}</div>
+</ng-template>
+  

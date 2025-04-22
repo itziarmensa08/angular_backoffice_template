@@ -48,4 +48,10 @@ mat-toolbar {
     }
 }
 
+mat-sidenav {
+    @media (max-width: 768px) {
+        width: 8vh;
+    }
+}
+
   
