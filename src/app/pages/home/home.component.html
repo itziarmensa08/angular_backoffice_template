@@ -1,7 +1,7 @@
 <div class="page">
     <h1>{{ projectName }}</h1>
     <div class="cards">
-        <mat-card class="example-card" appearance="outlined">
+        <mat-card class="example-card" appearance="outlined" [routerLink]="['/auth']">
             <mat-card-header>
               <mat-card-title-group>
                 <mat-icon>people</mat-icon>
@@ -12,18 +12,18 @@
                 {{ 'auth.message' | translate }}
             </mat-card-content>
         </mat-card>
-        <mat-card class="example-card" appearance="outlined">
+        <mat-card class="example-card" appearance="outlined" [routerLink]="['/models']">
             <mat-card-header>
               <mat-card-title-group>
                 <mat-icon>storage</mat-icon>
-                <mat-card-title>{{ 'menu.databases' | translate }}</mat-card-title>
+                <mat-card-title>{{ 'menu.models' | translate }}</mat-card-title>
               </mat-card-title-group>
             </mat-card-header>
             <mat-card-content>
-                {{ 'databases.message' | translate }}
+                {{ 'models.message' | translate }}
             </mat-card-content>
         </mat-card>
-        <mat-card class="example-card" appearance="outlined">
+        <mat-card class="example-card" appearance="outlined" [routerLink]="['/storage']">
             <mat-card-header>
               <mat-card-title-group>
                 <mat-icon>cloud_upload</mat-icon>

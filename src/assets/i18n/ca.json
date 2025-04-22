@@ -1,15 +1,19 @@
 {
+  "global": {
+    "search": "Buscar ..."
+  },
   "menu": {
     "home": "Inici",
     "auth": "Autenticació",
-    "databases": "Bases de dades",
+    "models": "Models",
     "storage": "Emmagatzematge",
     "settings": "Configuració"
   },
   "auth": {
-    "message": "Gestiona usuaris, inici de sessió i validacions de compte amb JWT i correu electrònic segur."
+    "message": "Gestiona usuaris, inici de sessió i validacions de compte amb JWT i correu electrònic segur.",
+    "users": "Usuaris"
   },
-  "databases": {
+  "models": {
     "message": "Visualitza i administra les dades emmagatzemades a les teves col·leccions o taules amb facilitat."
   },
   "storage": {

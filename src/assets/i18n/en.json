@@ -1,15 +1,19 @@
 {
+    "global": {
+        "search": "Search ..."
+    },
     "menu": {
         "home": "Home",
         "auth": "Auth",
-        "databases": "Databases",
+        "models": "Models",
         "storage": "Storage",
         "settings": "Settings"
     },
     "auth": {
-        "message": "Manage users, logins, and account validations using secure JWT and email."
+        "message": "Manage users, logins, and account validations using secure JWT and email.",
+        "users": "Users"
     },
-    "databases": {
+    "models": {
         "message": "View and manage stored data in your collections or tables with ease."
     },
     "storage": {

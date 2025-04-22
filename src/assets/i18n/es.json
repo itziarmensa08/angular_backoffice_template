@@ -1,15 +1,19 @@
 {
+  "global": {
+    "search": "Buscar ..."
+  },
   "menu": {
     "home": "Inicio",
     "auth": "Autenticación",
-    "databases": "Bases de datos",
+    "models": "Modelos",
     "storage": "Almacenamiento",
     "settings": "Configuración"
   },
   "auth": {
-    "message": "Gestiona usuarios, inicios de sesión y validaciones de cuenta con JWT y email seguro."
+    "message": "Gestiona usuarios, inicios de sesión y validaciones de cuenta con JWT y email seguro.",
+    "users": "Usuarios"
   },
-  "databases": {
+  "models": {
     "message": "Visualiza y administra los datos almacenados en tus colecciones o tablas fácilmente."
   },
   "storage": {

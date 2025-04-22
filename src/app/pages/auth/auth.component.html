@@ -1,1 +1,18 @@
-<p>auth works!</p>
+<div class="page">
+    <h1>{{ 'menu.auth' | translate }}</h1>
+    <mat-card class="example-card" appearance="outlined">
+        <mat-card-header>
+          <mat-card-title-group>
+            <mat-icon>add</mat-icon>
+            <mat-card-title>{{ 'auth.users' | translate }}</mat-card-title>
+          </mat-card-title-group>
+        </mat-card-header>
+        <mat-card-content>
+            <mat-form-field appearance="outline" class="full-width">
+                <mat-label>{{ 'global.search' | translate }}</mat-label>
+                <input matInput type="text" [(ngModel)]="searchQuery" placeholder="{{ 'auth.searchPlaceholder' | translate }}">
+                <mat-icon matSuffix>search</mat-icon>
+            </mat-form-field>
+        </mat-card-content>
+    </mat-card>
+</div>
