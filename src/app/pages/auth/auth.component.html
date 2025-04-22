@@ -14,11 +14,8 @@
                 <mat-icon matSuffix>search</mat-icon>
             </mat-form-field>
             <app-table
-              [headers]="['Nombre', 'Edad', 'Ciudad']"
-              [data]="[
-                { 'Nombre': 'Itziar', 'Edad': 25, 'Ciudad': 'Barcelona' },
-                { 'Nombre': 'Marc', 'Edad': 30, 'Ciudad': 'Madrid' }
-              ]">
+            [headers]="headers"
+            [data]="users">
             </app-table>
         </mat-card-content>
     </mat-card>
