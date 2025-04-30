@@ -22,7 +22,7 @@ import { AuthComponent } from './pages/auth/auth.component';
 import { ModelsComponent } from './pages/models/models.component';
 import { StorageComponent } from './pages/storage/storage.component';
 import { SettingsComponent } from './pages/settings/settings.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { TableComponent } from './components/table/table.component';
@@ -45,8 +45,8 @@ export function HttpLoaderFactory(http: HttpClient) {
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MatToolbarModule, 
-    MatButtonModule, 
+    MatToolbarModule,
+    MatButtonModule,
     MatIconModule,
     MatMenuModule,
     MatSidenavModule,
@@ -63,7 +63,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     MatCardModule,
     FormsModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    ReactiveFormsModule
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true }

@@ -10,6 +10,12 @@
     "storage": "Emmagatzematge",
     "settings": "Configuració"
   },
+  "login": {
+    "email": "Correu electrònic",
+    "password": "Contrasenya",
+    "signin": "Iniciar sessió",
+    "required": "Aquest camp és obligatori"
+  },
   "auth": {
     "message": "Gestiona usuaris, inici de sessió i validacions de compte amb JWT i correu electrònic segur.",
     "users": "Usuaris"
@@ -21,4 +27,3 @@
     "message": "Puja, gestiona i accedeix a fitxers de forma segura amb suport d'emmagatzematge al núvol."
   }
 }
-  

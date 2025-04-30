@@ -10,6 +10,12 @@
     "storage": "Almacenamiento",
     "settings": "Configuración"
   },
+  "login": {
+    "email": "Correo electrónico",
+    "password": "Contraseña",
+    "firmen": "Iniciar sesión",
+    "required": "Este campo es obligatorio"
+  },
   "auth": {
     "message": "Gestiona usuarios, inicios de sesión y validaciones de cuenta con JWT y email seguro.",
     "users": "Usuarios"
@@ -21,4 +27,3 @@
     "message": "Sube, gestiona y accede a archivos de forma segura con soporte de almacenamiento en la nube."
   }
 }
-  

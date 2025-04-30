@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
+import { AuthService } from './services/auth.service';
 
 @Component({
   selector: 'app-root',
@@ -10,10 +12,14 @@ import { TranslateService } from '@ngx-translate/core';
 export class AppComponent {
   title = 'RouteInjector';
 
-  constructor(private translate: TranslateService) {
+  constructor(
+    private translate: TranslateService,
+    private router: Router,
+    public authService: AuthService
+  ) {
     translate.addLangs(['ca', 'es', 'en']);
     translate.setDefaultLang('es');
-    
+
     const browserLang = this.translate.getBrowserLang();
     let lang = '';
 
@@ -23,5 +29,10 @@ export class AppComponent {
       lang = 'ca';
     }
     translate.use(lang);
+
+  }
+
+  isLogin(): boolean {
+    return this.router.url === '/login';
   }
 }

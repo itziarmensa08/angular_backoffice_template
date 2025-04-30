@@ -1,23 +1,29 @@
 {
-    "global": {
-        "search": "Search ...",
-        "no_data": "There is no data yet ..."
-    },
-    "menu": {
-        "home": "Home",
-        "auth": "Auth",
-        "models": "Models",
-        "storage": "Storage",
-        "settings": "Settings"
-    },
-    "auth": {
-        "message": "Manage users, logins, and account validations using secure JWT and email.",
-        "users": "Users"
-    },
-    "models": {
-        "message": "View and manage stored data in your collections or tables with ease."
-    },
-    "storage": {
-        "message": "Upload, manage, and access files securely with cloud storage support."
-    }
+  "global": {
+    "search": "Search ...",
+    "no_data": "There is no data yet ..."
+  },
+  "menu": {
+    "home": "Home",
+    "auth": "Auth",
+    "models": "Models",
+    "storage": "Storage",
+    "settings": "Settings"
+  },
+  "login": {
+    "email": "Email",
+    "password": "Password",
+    "signin": "Sign in",
+    "required": "This field is required"
+  },
+  "auth": {
+    "message": "Manage users, logins, and account validations using secure JWT and email.",
+    "users": "Users"
+  },
+  "models": {
+    "message": "View and manage stored data in your collections or tables with ease."
+  },
+  "storage": {
+    "message": "Upload, manage, and access files securely with cloud storage support."
+  }
 }
