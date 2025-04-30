@@ -1,0 +1,14 @@
+mat-card {
+  transition: transform 0.3s ease-in-out;
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+  }
+}
+
+.cards {
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
