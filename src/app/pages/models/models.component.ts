@@ -21,7 +21,7 @@ export class ModelsComponent {
   }
 
   getModels(): Observable<string[]> {
-    return this.comService.get<string[]>('/models');
+    return this.comService.get<string[]>('/models_backend');
   }
 
 }

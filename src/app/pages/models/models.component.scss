@@ -12,3 +12,10 @@ mat-card {
   display: flex;
   flex-direction: column;
 }
+
+.no-data {
+  text-align: center;
+  padding: 1rem;
+  color: #888;
+  font-style: italic;
+}
