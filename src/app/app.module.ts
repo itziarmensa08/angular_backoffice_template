@@ -26,6 +26,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { TableComponent } from './components/table/table.component';
+import { WeatherstationComponent } from './pages/models/weatherstation/weatherstation.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -40,7 +41,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     ModelsComponent,
     StorageComponent,
     SettingsComponent,
-    TableComponent
+    TableComponent,
+    WeatherstationComponent
   ],
   imports: [
     BrowserModule,

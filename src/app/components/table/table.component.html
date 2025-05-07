@@ -5,13 +5,19 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let row of data">
-        <td *ngFor="let header of headers">{{ row[header] }}</td>
-      </tr>
+      @if (fields.length == 0) {
+        <tr *ngFor="let row of data">
+          <td *ngFor="let header of headers">{{ row[header] }}</td>
+        </tr>
+      }
+      @else {
+        <tr *ngFor="let row of data">
+          <td *ngFor="let field of fields">{{ row[field] }}</td>
+        </tr>
+      }
     </tbody>
 </table>
-  
+
 <ng-template #noData>
     <div class="no-data">{{ 'global.no_data' | translate }}</div>
 </ng-template>
-  
