@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { CommunicationService } from './communication.service';
 import { Observable, BehaviorSubject } from 'rxjs';
 import { tap } from 'rxjs/operators';
+import { Router } from '@angular/router';
 
 @Injectable({
   providedIn: 'root',
@@ -10,10 +11,13 @@ export class AuthService {
   private currentUserSubject = new BehaviorSubject<any>(this.getUserFromLocalStorage());
   public currentUser$ = this.currentUserSubject.asObservable();
 
-  constructor(private api: CommunicationService) {}
+  constructor(
+    private api: CommunicationService,
+    private router: Router
+  ) {}
 
   login(email: string, password: string): Observable<any> {
-    return this.api.post('/auth/login', { email, password }).pipe(
+    return this.api.post('/auth/login/user/', { email, password }).pipe(
       tap((response: any) => {
         this.setSession(response);
         this.currentUserSubject.next(response.user);
@@ -22,12 +26,12 @@ export class AuthService {
   }
 
   register(username: string, email: string, password: string): Observable<any> {
-    return this.api.post('/auth/register', { username, email, password });
+    return this.api.post('/auth/register/user/', { email, password });
   }
 
   refreshToken(): Observable<any> {
     const refresh_token = localStorage.getItem('refresh_token');
-    return this.api.post('/auth/refresh', { refresh_token }).pipe(
+    return this.api.post('/auth/refresh/user/', { refresh_token }).pipe(
       tap((response: any) => {
         localStorage.setItem('access_token', response.access_token);
         localStorage.setItem('refresh_token', response.refresh_token);
@@ -40,6 +44,7 @@ export class AuthService {
     localStorage.removeItem('refresh_token');
     localStorage.removeItem('user');
     this.currentUserSubject.next(null);
+    this.router.navigate(['/login']);
   }
 
   isLoggedIn(): boolean {

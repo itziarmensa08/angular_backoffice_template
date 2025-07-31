@@ -7,7 +7,6 @@ import { StorageComponent } from './pages/storage/storage.component';
 import { SettingsComponent } from './pages/settings/settings.component';
 import { LoginComponent } from './pages/login/login.component';
 import { AuthGuard } from './services/auth.guard';
-import { WeatherstationComponent } from './pages/models/weatherstation/weatherstation.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -16,7 +15,6 @@ const routes: Routes = [
   { path: 'models', component: ModelsComponent, canActivate: [AuthGuard] },
   { path: 'storage', component: StorageComponent, canActivate: [AuthGuard] },
   { path: 'settings', component: SettingsComponent, canActivate: [AuthGuard] },
-  { path: 'weatherstation', component: WeatherstationComponent, canActivate: [AuthGuard] },
   { path: '**', redirectTo: '', pathMatch: 'full' },
 ];
 

@@ -11,8 +11,8 @@ export class UserService {
 
   constructor(private api: CommunicationService) {}
 
-  getAll(page: number, limit: number): Observable<User[]> {
-    return this.api.post<User[]>(`${this.base}s`, { page, limit });
+  getAll(skip: number, limit: number, filters: any = {}, orders: any = {}): Observable<any> {
+    return this.api.post<User[]>(`${this.base}s/?skip=${skip}&limit=${limit}`, { filters, orders });
   }
 
   getById(id: string): Observable<User> {
@@ -29,9 +29,5 @@ export class UserService {
 
   delete(id: string): Observable<any> {
     return this.api.delete<any>(`${this.base}/${id}`);
-  }
-
-  aggregate(pipeline: any[]): Observable<User[]> {
-    return this.api.post<User[]>(`${this.base}/aggregation`, pipeline);
   }
 }

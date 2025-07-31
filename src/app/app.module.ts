@@ -26,7 +26,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { TableComponent } from './components/table/table.component';
-import { WeatherstationComponent } from './pages/models/weatherstation/weatherstation.component';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { SchemasComponent } from './pages/schemas/schemas.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -42,7 +43,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     StorageComponent,
     SettingsComponent,
     TableComponent,
-    WeatherstationComponent
+    SchemasComponent,
   ],
   imports: [
     BrowserModule,
@@ -66,7 +67,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     FormsModule,
     MatFormFieldModule,
     MatInputModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatPaginatorModule
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true }
