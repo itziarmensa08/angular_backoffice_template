@@ -28,6 +28,7 @@ import { MatInputModule } from '@angular/material/input';
 import { TableComponent } from './components/table/table.component';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { SchemasComponent } from './pages/schemas/schemas.component';
+import { NewUserComponent } from './pages/auth/new-user/new-user.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -44,6 +45,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     SettingsComponent,
     TableComponent,
     SchemasComponent,
+    NewUserComponent,
   ],
   imports: [
     BrowserModule,
